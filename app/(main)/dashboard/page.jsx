@@ -11,7 +11,7 @@ async function DashboardPage() {
   return (
     <div className="px-5">
       {/* Budget Progress  */}
-
+      <h1>progress</h1>
       {/* Overview */}
 
       {/* Accounts Grid */}
