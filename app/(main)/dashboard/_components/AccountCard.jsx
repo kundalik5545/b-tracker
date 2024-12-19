@@ -2,7 +2,7 @@
 
 import { ArrowUpRight, ArrowDownRight, CreditCard } from "lucide-react";
 import { Switch } from "@/components/ui/switch";
-import { useEffect } from "react";
+import { Suspense, useEffect } from "react";
 import useFetch from "@/hooks/use-fetch";
 import {
   Card,
@@ -14,6 +14,7 @@ import {
 import Link from "next/link";
 import { updateDefaultAccount } from "@/actions/accounts";
 import { toast } from "sonner";
+import { BarLoader } from "react-spinners";
 
 export function AccountCard({ account }) {
   const { name, type, balance, id, isDefault } = account;
