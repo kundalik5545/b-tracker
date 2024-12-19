@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "routes": [],
+  "env": {
+    "DATABASE_URL": "postgresql://postgres.vhvehtxfwbbnqwwxvfwn:yZzAfcsgOXW9nNYT@aws-0-ap-southeast-1.pooler.supabase.com:6543/postgres?pgbouncer=true"
+  },
+  "buildCommand": "npm run generate && npm run build"
+}
